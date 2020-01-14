@@ -1,0 +1,12 @@
+<p *ngIf="nome >= 5 && nome <= 8">Meu Componente Criado!!</p>
+
+<input type="text" (input)="recuperarTexto($event.target.value)"/>
+
+{{nome}}
+<br><br>
+
+<div *ngFor="let item of arrayNum">
+  <p *ngIf="item !== 'Hugo' ">
+    {{item}}
+ </p>
+</div>
